@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=,, initial-scale=1.0">
+        <title>InnerTextandHTML</title>
+    </head>
+
+    <body>
+        <div id="Component" style="font-size: 100px;">Hi</div>
+        <div id="Component2" style="font-size: 100px;">Hi</div>
+        
+    </body>
+
+    <script>
+        document.getElementById("Component").innerText = "Hello";
+        document.getElementById("Component2").innerHTML = "<div style='color: red; font-size: 150px;'>Hello</div>"
+    </script>
+
+</html>
