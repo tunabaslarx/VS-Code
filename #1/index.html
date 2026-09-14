@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>#1</title>
 </head>
 <body>
-    <div>
-        <h1>Hello, World!</h1>
-    </div>
+    <span>Hello</span>
+    <script type="text/javascript">
+        function Example(Value) {
+            var Eleman = document.createElement("style");
+            Eleman.type = "text/css";
+            if (Eleman.styleSheet){
+                Eleman.styleSheet.cssText = Value;
+            } else {
+                Eleman.appendChild(document.createTextNode(Value));
+            }
+            document.getElementsByTagName("head")[0].appendChild(Eleman);
+        }
+
+        var Content = "span { display: inline-block; border: 3px double black; margin: 5px; padding: 5px; }"
+
+        window.onload = function() {
+            Example(Content);
+        }
+    </script>
 </body>
 </html>
