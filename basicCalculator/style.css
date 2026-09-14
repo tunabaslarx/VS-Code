@@ -1,0 +1,32 @@
+#calculateBar{
+    background-color: gray;
+
+    /* Kutuyu serbest bırakır ve sayfa akışından ayırır */
+    position: absolute;
+
+    /* Kutunun sol üst köşesini ekranın tam ortasına getirir */
+    top: 50%;
+    left: 50%;
+
+    /* Kutuyu kendi genişliği ve yüksekliğinin yarısı kadar geri çekerek 
+    tam merkez noktasını ekranın ortasına eşitler */
+    transform: translate(-50%, -50%);
+
+    width: 35vw;
+    height: 3vh;
+    max-width: 400px;
+    max-height: 100px;
+    min-width: 450px;
+    min-height: 30px;
+ 
+    /* Kutunun içindeki diğer kutuları ortaladı*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#result{
+    pointer-events: none;
+}

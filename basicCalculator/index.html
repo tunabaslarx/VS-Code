@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div id="calculateBar">
+            <input type="number" class="Box" id="inputBox1" placeholder="0" onfocus="this.value = ''">
+            <label class="box"><input type="text" id="result" placeholder="00000" readonly></label>
+            <button onclick="defineOperator('+')" id="totalBtn">+</button>
+            <button onclick="defineOperator('-')" id="minusBtn">-</button>
+            <button onclick="defineOperator('*')" id="multiplyBtn">*</button>
+            <button onclick="defineOperator('/')" id="divideBtn">/</button>
+        </div>
+    </body>
+
+</html>
